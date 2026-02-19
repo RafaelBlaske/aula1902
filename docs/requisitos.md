@@ -1,55 +1,35 @@
-Requisitos Funcionais (RF)
+# Requisitos do Sistema — Confeitaria
 
-**RF01 — Cadastro de Cliente**
+## Requisitos Funcionais
 
-Descrição:
+### RF01 — Cadastro de Cliente
 O sistema deve permitir o cadastro de clientes com nome, telefone e e-mail.
 
-Critérios de aceitação:
+### RF02 — Login de Usuário
+O sistema deve permitir login utilizando e-mail e senha.
 
-Campos obrigatórios validados
-
-Não permitir e-mail duplicado
-
-Cadastro salvo no banco
-
-**RF02 — Login de Usuário**
-
-Descrição:
-O sistema deve permitir que usuários realizem login usando e-mail e senha.
-
-Critérios:
-
-Validar credenciais
-
-Exibir erro se inválidas
-
-Permitir acesso após autenticação
-
-**RF03 — Cadastro de Produtos**
-
-Descrição:
+### RF03 — Cadastro de Produtos
 O sistema deve permitir cadastrar produtos da confeitaria.
 
-Critérios:
-
-Nome do produto
-
-Preço
-
-Categoria
-
-Status ativo/inativo
-
-**RF04 — Registro de Pedidos**
-
-Descrição:
+### RF04 — Registro de Pedidos
 O sistema deve permitir registrar pedidos realizados pelos clientes.
 
-Critérios:
+---
 
-Selecionar cliente
+## Requisitos Não Funcionais
 
-Adicionar produtos
+### RNF01 — Desempenho
+O sistema deve responder em até 3 segundos.
 
-Calcular valor total automaticamente
+### RNF02 — Segurança
+As senhas devem ser armazenadas com criptografia.
+
+---
+
+## Regras de Negócio
+
+### RN01 — Pedido mínimo
+Pedidos devem possuir pelo menos um produto.
+
+### RN02 — Produto indisponível
+Produtos inativos não podem ser vendidos.
